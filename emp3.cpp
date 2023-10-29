@@ -2,12 +2,12 @@
 #include <string>
 #include <vector>
 #include "emp3.h"
-#include <iomanip>
+
 
 using std::string;
 using std::vector;
 
-//абстрактные классы
+//Г ГЎГ±ГІГ°Г ГЄГІГ­Г»ГҐ ГЄГ«Г Г±Г±Г»
 
 FIO::FIO(){
     lastname="";
@@ -20,8 +20,8 @@ salary::salary(){
 }
 
 
-//класс сотрудник
-employee::employee():FIO(), salary(){     //конструктор по умолчанию
+//ГЄГ«Г Г±Г± Г±Г®ГІГ°ГіГ¤Г­ГЁГЄ
+employee::employee():FIO(), salary(){     //ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г° ГЇГ® ГіГ¬Г®Г«Г·Г Г­ГЁГѕ
 
 };
 
@@ -68,7 +68,7 @@ int employee::get_salary(){
 
 
 
-//ПРОГРАММИСТ//
+//ГЏГђГЋГѓГђГЂГЊГЊГ€Г‘Г’//
 
 programmer::programmer():employee(){
     technology = new vector<string>;
@@ -97,7 +97,7 @@ vector<string>& programmer::get_vec_techn(){
 
 
 
-//Водитель
+//Г‚Г®Г¤ГЁГІГҐГ«Гј
 driver::driver(const string& ln, const string& fn,  const string& mn, int sal1):
     employee(ln,fn,mn,sal1){
     this->categories = new vector<string>;
@@ -122,7 +122,7 @@ vector<string>& driver::get_transport(){
 
 
 
-//директор
+//Г¤ГЁГ°ГҐГЄГІГ®Г°
 
 director::director( const string& ln, const string& fn,  const string& mn, int sal1):
     employee(ln,fn,mn,sal1){
